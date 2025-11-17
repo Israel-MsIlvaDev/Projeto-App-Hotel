@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#F0F8FF">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Image 
+            Source="https://placehold.co/150/007A99/FFFFFF?text=Dev"
+            HeightRequest="150"
+            WidthRequest="150"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="App Hotel"
+            FontSize="28"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            TextColor="#007A99" />
+
+        <Frame CornerRadius="10" Padding="20" BorderColor="#DDDDDD" HasShadow="True" WidthRequest="300" BackgroundColor="#F5F5F5">
+            <VerticalStackLayout Spacing="10">
+                <Label 
+                    Text="Desenvolvido por:"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black" />
+
+                <Label 
+                    Text="Israel Matheus da Silva"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#007A99" />
+
+                <Label 
+                    Text="Ano: 2025"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Black" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>

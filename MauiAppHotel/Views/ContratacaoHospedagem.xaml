@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
+             Title="App Hotel - Contratação"
+             BackgroundColor="#F0F8FF">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Image 
+                Source="https://placehold.co/300x100/007A99/FFFFFF?text=App+Hotel"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Bem-vindo à sua reserva!"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                TextColor="#007A99"/>
+
+            <Frame CornerRadius="10" Padding="15" BorderColor="#DDDDDD" HasShadow="True" BackgroundColor="#F5F5F5">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Qual tipo de suíte você deseja?" FontSize="16" FontAttributes="Bold" TextColor="Black" />
+                    <Picker x:Name="pck_quarto"
+                            Title="Selecione um quarto"
+                            ItemDisplayBinding="{Binding Descricao}"
+                            TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Padding="15" BorderColor="#DDDDDD" HasShadow="True" BackgroundColor="#F5F5F5">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Período da Estadia" FontSize="16" FontAttributes="Bold" TextColor="Black" />
+
+                    <Label Text="Data de Check-in:" TextColor="Black" />
+                    <DatePicker x:Name="dtp_checkin" 
+                                MinimumDate="01/01/2024" 
+                                Format="dd/MM/yyyy"
+                                TextColor="Black" />
+
+                    <Label Text="Data de Check-out:" TextColor="Black" />
+                    <DatePicker x:Name="dtp_checkout" 
+                                MinimumDate="01/01/2024" 
+                                Format="dd/MM/yyyy"
+                                TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame CornerRadius="10" Padding="15" BorderColor="#DDDDDD" HasShadow="True" BackgroundColor="#F5F5F5">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Hóspedes" FontSize="16" FontAttributes="Bold" TextColor="Black" />
+
+                    <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                        <Label Grid.Column="0" Text="Quantidade de Adultos:" VerticalTextAlignment="Center" TextColor="Black" />
+                        <Stepper x:Name="stp_adultos" 
+                                 Grid.Column="1" 
+                                 Minimum="1" 
+                                 Maximum="10" 
+                                 Increment="1" 
+                                 Value="1"
+                                 BackgroundColor="#007A99" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                        <Label Grid.Column="0" Text="Quantidade de Crianças:" VerticalTextAlignment="Center" TextColor="Black" />
+                        <Stepper x:Name="stp_criancas" 
+                                 Grid.Column="1" 
+                                 Minimum="0" 
+                                 Maximum="10" 
+                                 Increment="1" 
+                                 Value="0"
+                                 BackgroundColor="#007A99" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button 
+                x:Name="btn_calcular"
+                Text="Calcular Valor da Hospedagem"
+                Clicked="btn_calcular_Clicked"
+                BackgroundColor="#007A99"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Margin="0,20,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
