@@ -68,30 +68,40 @@ Business logic is encapsulated in the `Hospedagem` model, which:
 
 ---
 
-▶️ Como executar / How to run
+## ▶️ Como executar / How to run
 
-🇧🇷 Passos para executar (Português):
+### 🇧🇷 Passos para executar (Português)
 
-º Clone o repositório usando:
-º git clone https://github.com/Israel-MsIlvaDev/MauiAppHotel.git
-º Abra o projeto no Visual Studio 2022.
-º Certifique-se de que o workload “.NET Multi-platform App UI (MAUI)” está instalado no Visual Studio.
-º No seletor de dispositivos, escolha onde deseja rodar o app:
-º Máquina Windows
-º Emulador Android
-º Dispositivo Android físico
-º Pressione F5 ou clique no botão Run para compilar e iniciar o aplicativo.
+1. Clone o repositório usando:
+```bash```
+   git clone https://github.com/Israel-MslIvaDev/MauiAppHotel.git
+
+2. Abra o projeto no Visual Studio 2022.
+
+3. Certifique-se de que o workload “.NET Multi-platform App UI (MAUI)” está instalado no Visual Studio.
+
+4. No seletor de dispositivos, escolha onde deseja rodar o app:
+   - Máquina Windows
+   - Emulador Android
+   - Dispositivo Android físico
+
+5. Pressione F5 ou clique no botão **Run** para compilar e iniciar o aplicativo.
 
 ---
 
 🇬🇧 Steps to run (English):
 
-º Clone the repository using:
-º git clone https://github.com/Israel-MsIlvaDev/MauiAppHotel.git
-º Open the solution with Visual Studio 2022.
-º Make sure the “.NET Multi-platform App UI (MAUI)” workload is installed.
-º In the device selector, choose where you want to run the app:
-º Windows Machine
-º Android Emulator
-º Physical Android device
-º Press F5 or click Run to build and launch the application.
+1. Clone the repository using:
+```bash```
+   git clone https://github.com/Israel-MslIvaDev/MauiAppHotel.git
+
+3. Open the solution with Visual Studio 2022.
+
+4. Make sure the “.NET Multi-platform App UI (MAUI)” workload is installed.
+
+5. In the device selector, choose where you want to run the app:
+   - Windows Machine
+   - Android Emulator
+   - Physical Android device
+
+6. Press F5 or click **Run** to build and launch the application.
