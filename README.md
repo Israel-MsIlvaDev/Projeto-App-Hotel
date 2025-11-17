@@ -89,7 +89,7 @@ Business logic is encapsulated in the `Hospedagem` model, which:
 
 ---
 
-🇬🇧 Steps to run (English):
+### 🇬🇧 Steps to run (English):
 
 1. Clone the repository using:
 ```bash```
